@@ -16,7 +16,7 @@ jobs:
       - name: Build
         run: yarn build
       - name: Sync files to hosting
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with: 
           server: www.delta-www.cz
           username: ${{ secrets.ftp_username }}
