@@ -40,3 +40,4 @@ jobs:
           security: strict
           protocol: ftps
           local-dir: ./out/
+          state-name: sync-state.json
