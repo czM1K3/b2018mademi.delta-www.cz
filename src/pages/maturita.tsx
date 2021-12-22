@@ -8,7 +8,7 @@ const Maturita: FC = () => (
 		<p>
 			Zde si představte text o maturitním projektu a soubory.
 		</p>
-		<Button href="https://github.com/Codeventure-cz/dokumentace/releases/">Dokumentace</Button>
+		<Button href="https://github.com/Codeventure-cz/dokumentace/releases/latest">Dokumentace</Button>
 		<Button href="https://www.codeventure.cz">Web</Button>
 	</Layout>
 );
