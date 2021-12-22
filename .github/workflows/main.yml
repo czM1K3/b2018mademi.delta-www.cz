@@ -15,14 +15,27 @@ jobs:
         run: yarn install
       - name: Build
         run: yarn build
-      - name: Sync files to hosting
-        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      - name: Archive production artifact
+        uses: actions/upload-artifact@main
+        with:
+          name: out
+          path: out
+  deploy:
+    name: Deploy 🚀
+    needs: build
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Download artifact
+        uses: actions/download-artifact@main
         with: 
-          server: www.delta-www.cz
-          username: ${{ secrets.ftp_username }}
+          name: out
+          path: out
+      - name: Sync files to hosting
+        uses: sebastianpopp/ftp-action@releases/v2
+        with: 
+          host: www.delta-www.cz
+          user: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
-          server-dir: /web/
-          security: strict
-          protocol: ftps
-          local-dir: ./out/
-          state-name: sync-state.json
+          remoteDir: web
+          localDir: out
+          forceSsl: true
