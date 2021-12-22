@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Codeventure</a>
+          Welcome to <a href="https://www.codeventure.cz">Codeventure</a>
         </h1>
 
         <p className={styles.description}>
