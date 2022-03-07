@@ -10,7 +10,10 @@ const Maturita: FC = () => (
 
 				<h1>Maturitní projekt - Codeventure</h1>
 				<p>
-					Zde si představte text o maturitním projektu a soubory.
+					Codeventure je interaktivní hra pro rozvíjení logického myšlní u dětí. Celá hra je stylizována do kouzelnického prostředí, ve kterém dítě čaruje a prochází úrovněmi. 
+				</p>
+				<p>
+					Pro hraní hry je potřeba být zaregistrovaný na webu, počítač/televize s velkou obrazovkou, mobilní telefon s nainstalovanou aplikací a karetní set. Počítač/televize slouží jako zobrazovadlo a mobilní aplikace jako ovladač, kterým si uživatel volí, která úroveň chce hrát a následně fotí svoje řešení úrovně.
 				</p>
 				<Row>
 					<Button href="/maturita/dokumentace/dokumentace-22122021.pdf">Dokumentace (PDF)</Button>
