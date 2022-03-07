@@ -39,4 +39,4 @@ jobs:
           remoteDir: web
           localDir: out
           forceSsl: true
-          options: "--delete --asci"
+          options: "--delete --ascii"
