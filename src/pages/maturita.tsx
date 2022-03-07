@@ -11,7 +11,7 @@ const Maturita: FC = () => (
 			<div className="d-flex flex-column justify-content-center text-center border p-3">
 				<h1 className="h1">Maturitní projekt - Codeventure</h1>
 				<div>
-					<Image src="/magician.jpg" width={200} height={200} layout="fixed" loader={() => "/magician.jpg"} />
+					<Image src="/magician.webp" width={200} height={200} layout="fixed" unoptimized={true} />
 				</div>
 				<p>
 					Codeventure je interaktivní hra pro rozvíjení logického myšlní u dětí. Celá hra je stylizována do kouzelnického prostředí, ve kterém dítě čaruje a prochází úrovněmi. 
