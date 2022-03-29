@@ -28,7 +28,7 @@ const Maturita: FC = () => (
 				</p>
 				<hr className="my-2" />
 				<Row>
-					<Button href="/maturita/dokumentace/dokumentace-22122021.pdf">Dokumentace (PDF)</Button>
+					<Button href="/maturita/dokumentace/dokumentace.pdf">Dokumentace (PDF)</Button>
 					<Button href="https://github.com/Codeventure-cz/dokumentace/releases/latest">Dokumentace (Zdrojový kód)</Button>
 				</Row>
 				<Row>
